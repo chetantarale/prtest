@@ -1,11 +1,16 @@
-language: node_js
+language: python
 
-node_js
-  - 0.12
-  - 0.10
-env:
-  - foo=bar
+python:
+  - 3.2
   
+env:
+  global:
+    - FOO=FUBU
+
+  matrix:
+    - M1=ONE
+    - M2=TWO
+    
 build:
   pre_ci:
     - echo "This is pre_ci"
