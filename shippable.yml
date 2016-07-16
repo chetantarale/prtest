@@ -1,4 +1,4 @@
-build_image:u14php7pls
+build_image: drydock/u14php7pls
 
 language: php
 
