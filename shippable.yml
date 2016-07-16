@@ -1,3 +1,5 @@
+build_image:u14php7pls
+
 language: php
 
 php:
@@ -18,7 +20,7 @@ build:
     - echo $JOB_ID
     - echo $SHIPPABLE_JOB_ID
     - echo $SHIPPABLE_BUILD_ID
-    - pickle install PDO_PGSQL-1.0.1
+    - sudo apt install pdo_pgsql
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
