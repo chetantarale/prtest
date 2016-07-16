@@ -15,7 +15,9 @@ build:
   pre_ci:
     - echo "This is pre_ci"
   ci:
-    - echo $JOB_ID 
+    - echo $JOB_ID
+    - echo $SHIPPABLE_JOB_ID
+    - echo $SHIPPABLE_BUILD_ID
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
