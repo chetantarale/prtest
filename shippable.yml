@@ -18,7 +18,7 @@ build:
     - echo $JOB_ID
     - echo $SHIPPABLE_JOB_ID
     - echo $SHIPPABLE_BUILD_ID
-    - echo $JOB_ID
+    - echo $JOB
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
