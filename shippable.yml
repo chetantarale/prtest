@@ -17,10 +17,10 @@ build:
   pre_ci:
     - echo "This is pre_ci"
   ci:
-    - echo $JOB_ID
-    - echo $SHIPPABLE_JOB_ID
-    - echo $SHIPPABLE_BUILD_ID
-    - sudo apt install pgsql
+    - apt-get install php5-dev
+    - pecl install pdo
+    - pecl install pdo_pgsql
+    - sudo apt-get install pdo_pgsql
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
