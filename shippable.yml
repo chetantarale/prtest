@@ -20,7 +20,7 @@ build:
     - echo $JOB_ID
     - echo $SHIPPABLE_JOB_ID
     - echo $SHIPPABLE_BUILD_ID
-    - sudo apt install pdo_pgsql
+    - sudo apt install pgsql
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
