@@ -17,7 +17,6 @@ build:
   pre_ci:
     - echo "This is pre_ci"
   ci:
-    - apt-get install php5-dev
     - pecl install pdo
     - pecl install pdo_pgsql
     - sudo apt-get install pdo_pgsql
