@@ -18,7 +18,7 @@ build:
     - echo $JOB_ID
     - echo $SHIPPABLE_JOB_ID
     - echo $SHIPPABLE_BUILD_ID
-    - pickle install pdo_pgsql
+    - pickle install pdo_pgsql-1.0.2
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
