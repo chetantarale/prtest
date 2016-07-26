@@ -24,7 +24,7 @@ build:
 integrations:
   notifications:
     - integrationName: my_webhook
-      type: resource
+      type: webhook
       payload:
         - resourceId=14555
       on_success: always
