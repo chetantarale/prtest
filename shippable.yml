@@ -26,7 +26,7 @@ integrations:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - tag=$BRANCH_NAME:$BUILD_ID
+        - resourceId=14555
       on_success: always
       on_failure: never
       on_pull_request: never
