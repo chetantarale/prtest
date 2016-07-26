@@ -15,11 +15,19 @@ build:
   pre_ci:
     - echo "This is pre_ci"
   ci:
-    - apt-get install php5-dev
-    - pecl install pdo
-    - pecl install pdo_pgsql
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
     - echo "Hello, World!"
     - echo "This is !!!!!!"
+
+integrations:
+  notifications:
+    - integrationName: my_webhook
+      type: webhook
+      payload:
+        - tag: $BRANCH_NAME:$BUILD_ID
+      on_success: always
+      on_failure: never
+      on_pull_request: never
+      on_start: never
