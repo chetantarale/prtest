@@ -16,6 +16,7 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!"
     - echo "This is !!!!!!"
+    - cat invalid.txt
 
 integrations:
   notifications:
@@ -23,15 +24,8 @@ integrations:
       type: webhook
       payload:
         - tag=$BUILD_NUMBER my_hook
-      on_success: always
-      on_failure: never
+      on_success: never
+      on_failure: always
       on_pull_request: never
       on_start: never
-    - integrationName: hook2
-      type: webhook
-      payload:
-        - tag=$BUILD_NUMBER hook2
-      on_success: always
-      on_failure: never
-      on_pull_request: never
-      on_start: never
+
