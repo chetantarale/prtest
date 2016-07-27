@@ -20,9 +20,9 @@ build:
 integrations:
   notifications:
     - integrationName: my_webhook
-      type: resource
+      type: webhook
       payload:
-        - message=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
+        - tag=Shippable Run $BUILD_NUMBER ($BUILD_URL) succeeded for $COMPARE_URL
       on_success: always
       on_failure: never
       on_pull_request: never
