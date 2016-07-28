@@ -24,8 +24,8 @@ integrations:
       type: webhook
       payload:
         - versionName=$BUILD_NUMBER.my_hook
-      on_success: never
-      on_failure: always
+      on_success: always
+      on_failure: never
       on_pull_request: never
       on_start: never
 
