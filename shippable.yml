@@ -23,7 +23,7 @@ integrations:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - versionName='String'
+        - versionName=$BRANCH_NAME:$BUILD_ID
       on_success: always
       on_failure: always
       on_pull_request: never
