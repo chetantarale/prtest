@@ -22,7 +22,7 @@ integrations:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - versionName=$LANG
+        - versionName=$PULL_REQUEST
       on_success: always
       on_failure: always
       on_pull_request: never
