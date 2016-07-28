@@ -23,7 +23,7 @@ integrations:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - versionName=$PULL_REQUEST
+        - versionName=$ARCHIVE_DIR
       on_success: always
       on_failure: always
       on_pull_request: never
