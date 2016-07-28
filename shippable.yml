@@ -16,14 +16,13 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!"
     - echo "This is !!!!!!"
-    - cat jksdgjk
 
 integrations:
   notifications:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - versionName=$SHIPPABLE_JOB_NUMBER
+        - versionName=$LANG
       on_success: always
       on_failure: always
       on_pull_request: never
