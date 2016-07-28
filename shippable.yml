@@ -16,14 +16,13 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!"
     - echo "This is !!!!!!"
-    - cat iusdfjk
 
 integrations:
   notifications:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - versionName=$ARCHIVE_DIR
+        - versionName=$HAS_JOSH_K_SEAL_OF_APPROVAL
       on_success: always
       on_failure: always
       on_pull_request: never
