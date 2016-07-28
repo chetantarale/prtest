@@ -22,7 +22,7 @@ integrations:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - versionName=$HAS_JOSH_K_SEAL_OF_APPROVAL
+        - versionName=$BUILD_NUMBER
       on_success: always
       on_failure: always
       on_pull_request: never
