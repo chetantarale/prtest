@@ -16,7 +16,6 @@ build:
     - echo "This is ??????"
     - echo "Hello, World!"
     - echo "This is !!!!!!"
-    - cat jsgvjh
 
 integrations:
   notifications:
