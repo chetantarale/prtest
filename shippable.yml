@@ -23,7 +23,7 @@ integrations:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - versionName=$BRANCH_NAME:$BUILD_ID
+        - versionName=$SHIPPABLE_JOB_NUMBER
       on_success: always
       on_failure: always
       on_pull_request: never
