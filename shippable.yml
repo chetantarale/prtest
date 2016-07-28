@@ -23,7 +23,7 @@ integrations:
     - integrationName: my_webhook
       type: webhook
       payload:
-        - tag=$BUILD_NUMBER my_hook
+        - versionName=$BUILD_NUMBER.my_hook
       on_success: never
       on_failure: always
       on_pull_request: never
