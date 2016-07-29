@@ -28,3 +28,14 @@ build:
 #       on_pull_request: never
 #       on_start: never
 
+integrations:
+  notifications:
+    - integrationName: slack-test
+      type: slack
+      recipients: 
+        - "#testissues"
+        
+      on_start: always
+      on_pull_request: always
+      on_success: always
+      on_failure: always
