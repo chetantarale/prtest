@@ -30,7 +30,7 @@ build:
 
 integrations:
   notifications:
-    - integrationName: slack-test
+    - integrationName: slack
       type: slack
       recipients: 
         - "#testissues"
