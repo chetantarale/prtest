@@ -37,3 +37,10 @@ integrations:
       on_pull_request: always
       on_success: always
       on_failure: always
+
+  hub:
+    - integrationName: "dockerhub"
+      type: docker
+      branches:
+          only:
+            - master
