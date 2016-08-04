@@ -13,7 +13,6 @@ build:
   ci:
     - echo "Hello, World!"
     - echo "This is master"
-    - echo "!Hello, World!"
     - echo "Testing webhook! :)"
 
 # integrations:
