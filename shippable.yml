@@ -15,7 +15,7 @@ build:
     - echo "This is master"
     - echo "This is ????"
     - echo "!Hello, World!"
-    - echo "!Testing webhook!"
+    - echo "Testing webhook!"
 
 # integrations:
 #   notifications:
