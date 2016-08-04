@@ -14,7 +14,7 @@ build:
     - echo "Hello, World!"
     - echo "This is master"
     - echo "This is ??????"
-    - echo "Hello, World!"
+    - echo "!Hello, World!"
     - echo "!Testing webhook!"
 
 # integrations:
