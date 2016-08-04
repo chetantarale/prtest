@@ -12,7 +12,7 @@ build:
     - echo "This is pre_ci"
   ci:
     - echo "Hello, World!"
-    - echo "Thiis is master"
+    - echo "This is master"
     - echo "This is ????"
     - echo "!Hello, World!"
     - echo "!!Testing webhook!"
