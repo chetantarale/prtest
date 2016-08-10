@@ -13,7 +13,10 @@ build:
   pre_ci:
     - echo "This is pre_ci"
   ci:
-    - sleep 2m 
+    - if [ $SHIPPABLE_PHP_VERSION -ne 7 ];
+    - then
+    - sleep 2m
+    - fi
     - echo "Hello, World Ssup :)"
     - echo "Testing webhook!:)"
 
