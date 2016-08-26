@@ -15,7 +15,14 @@ build:
     - if [ "$SHIPPABLE_PHP_VERSION" == "5.6" ]; then sleep 5m; fi 
     - echo "Hello, World Ssup :)"
 
-# integrations:
+integrations:
+  hub:
+    - integrationName: "dockerhub"
+      type: docker
+      branches:
+          only:
+            - master
+
 #   notifications:
 #     - integrationName: my_webhook
 #       type: webhook
