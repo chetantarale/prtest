@@ -23,6 +23,7 @@ integrations:
           only:
             - master
 
+  notifications:
     - integrationName: slack
       type: slack
       recipients: 
