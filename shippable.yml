@@ -12,7 +12,7 @@ build:
   pre_ci:
     - echo "This is pre_ci"
   ci:
-    - if [ "$SHIPPABLE_PHP_VERSION" == "5.6" ]; then sleep 5m; fi 
+    - if [ "$SHIPPABLE_PHP_VERSION" == "5.6" ]; then sleep 10s; fi 
     - echo "Hello, World Ssup :)"
 
 integrations:
