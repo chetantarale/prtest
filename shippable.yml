@@ -41,7 +41,7 @@ integrations:
     #   on_success: always
     #   on_failure: always
     #   on_pull_request: never
-      on_start: never
+    #  on_start: never
 #   notifications:
 #     - integrationName: my_webhook
 #       type: webhook
